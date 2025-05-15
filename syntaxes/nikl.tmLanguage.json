@@ -1,0 +1,150 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "NIKL",
+    "scopeName": "source.nikl",
+    "fileTypes": ["nk"],
+    "patterns": [
+        { "include": "#comments" },
+        { "include": "#keywords" },
+        { "include": "#constants" },
+        { "include": "#builtins" },
+        { "include": "#operators" },
+        { "include": "#comparisons" },
+        { "include": "#punctuation" },
+        { "include": "#numbers" },
+        { "include": "#strings" },
+        { "include": "#variables" }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.double-slash.nikl",
+                    "match": "//.*$"
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.nikl",
+                    "match": "\\b(if|elif|else|while|for|return|fn|match|spawn|wait|assert)\\b"
+                },
+                {
+                    "name": "storage.modifier.nikl",
+                    "match": "\\b(let|const)\\b"
+                },
+                {
+                    "name": "support.type.nikl",
+                    "match": "\\b(int|float|bool|string|list|dict)\\b"
+                }
+            ]
+        },
+        "constants": {
+            "patterns": [
+                {
+                    "name": "constant.language.boolean.nikl",
+                    "match": "\\b(True|False)\\b"
+                },
+                {
+                    "name": "constant.language.null.nikl",
+                    "match": "\\b(None)\\b"
+                }
+            ]
+        },
+        "builtins": {
+            "patterns": [
+                {
+                    "name": "support.function.builtin.nikl",
+                    "match": "\\b(print|input|len)\\b"
+                }
+            ]
+        },
+        "operators": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.assignment.nikl",
+                    "match": "="
+                },
+                {
+                    "name": "keyword.operator.equality.nikl",
+                    "match": "==|!="
+                },
+                {
+                    "name": "keyword.operator.arithmetic.nikl",
+                    "match": "\\+|\\-|\\*|/"
+                },
+                {
+                    "name": "constant.language.boolean.nikl",
+                    "match": "\\b(and|or|not)\\b"
+                }
+            ]
+        },
+        "comparisons": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.comparison.nikl",
+                    "match": "<=|>=|<|>"
+                }
+            ]
+        },
+        "punctuation": {
+            "patterns": [
+                { "name": "punctuation.parenthesis.nikl", "match": "[()]" },
+                { "name": "punctuation.brace.nikl", "match": "[{}]" },
+                { "name": "punctuation.bracket.nikl", "match": "[\\[\\]]" },
+                { "name": "punctuation.separator.comma.nikl", "match": "," }
+            ]
+        },
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.float.nikl",
+                    "match": "\\b\\d+\\.\\d+\\b"
+                },
+                {
+                    "name": "constant.numeric.integer.nikl",
+                    "match": "\\b\\d+\\b"
+                }
+            ]
+        },
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.double.nikl",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.nikl",
+                            "match": "\\\\."
+                        }
+                    ]
+                },
+                {
+                    "name": "string.quoted.single.nikl",
+                    "begin": "'",
+                    "end": "'",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.nikl",
+                            "match": "\\\\."
+                        }
+                    ]
+                }
+            ]
+        },
+        "variables": {
+            "patterns": [
+                {
+                    "name": "entity.name.function.nikl",
+                    "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\s*\\()"
+                },
+                {
+                    "name": "variable.other.nikl",
+                    "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+                }
+            ]
+        }
+    }
+}
