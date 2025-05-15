@@ -1,10 +1,19 @@
 {
     "name": "nikl-language-support",
-    "displayName": "NIKL Language Support",
+    "displayName": "NIKL: Experimental Language Support",
     "description": "Syntax highlighting and editing support for NIKL language",
+    "publisher": "Neko-Nik",
+    "pricing": "Free",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:Neko-Nik/NIKL-VSCode-Extension.git"
+    },
+    "sponsor": {
+        "url": "https://github.com/sponsors/Neko-Nik"
+    },
     "engines": {
-        "vscode": "^1.100.0"
+        "vscode": "^1.0.0"
     },
     "categories": [
         "Programming Languages"
