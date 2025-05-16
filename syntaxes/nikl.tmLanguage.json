@@ -36,7 +36,7 @@
                 },
                 {
                     "name": "support.type.nikl",
-                    "match": "\\b(int|float|bool|string|list|dict)\\b"
+                    "match": "\\b(Int|Float|Bool|String|Array|HashMap|Set|Tuple)\\b"
                 }
             ]
         },
