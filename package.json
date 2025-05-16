@@ -4,7 +4,8 @@
     "description": "Syntax highlighting and editing support for NIKL language",
     "publisher": "Neko-Nik",
     "pricing": "Free",
-    "version": "0.0.2",
+    "version": "0.0.3",
+    "icon": "images/icon.png",
     "repository": {
         "type": "git",
         "url": "git@github.com:Neko-Nik/NIKL-VSCode-Extension.git"
