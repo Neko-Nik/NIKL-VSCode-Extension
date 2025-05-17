@@ -28,7 +28,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.nikl",
-                    "match": "\\b(if|elif|else|while|for|return|fn|match|spawn|wait|assert)\\b"
+                    "match": "\\b(if|elif|else|while|for|return|fn|match|spawn|wait|pub|import|as)\\b"
                 },
                 {
                     "name": "storage.modifier.nikl",

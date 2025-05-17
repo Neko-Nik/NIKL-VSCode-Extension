@@ -4,7 +4,8 @@
     "description": "Syntax highlighting and editing support for NIKL language",
     "publisher": "Neko-Nik",
     "pricing": "Free",
-    "version": "0.0.3",
+    "version": "0.0.4",
+    "license": "MIT",
     "icon": "images/icon.png",
     "repository": {
         "type": "git",
