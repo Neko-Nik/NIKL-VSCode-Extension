@@ -20,7 +20,17 @@
             "patterns": [
                 {
                     "name": "comment.line.double-slash.nikl",
-                    "match": "//.*$"
+                    "begin": "//",
+                    "beginCaptures": {
+                        "0": { "name": "punctuation.definition.comment.nikl" }
+                    },
+                    "end": "$",
+                    "patterns": [
+                        {
+                            "name": "storage.modifier.nikl",
+                            "match": "\\b(TODO|FIXME|BUG|NOTE|HACK|XXX)\\b"
+                        }
+                    ]
                 }
             ]
         },
