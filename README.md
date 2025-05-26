@@ -1,55 +1,164 @@
-# NIKL Language Support for VS Code
+# NIKL Language Support
 
-This is a **very early-stage** Visual Studio Code extension providing syntax highlighting for the **NIKL** programming language.
+Official Visual Studio Code extension for the **Nik Language (NIKL)**, a modern programming language designed for simplicity and efficiency.
 
-> ⚠️ **Note:** NIKL is currently in its infancy and not yet even at alpha stage. Expect many changes, incomplete features, and potential instability in the language and tooling.
-
----
-
-## Features
-
-- Syntax highlighting for `.nk` files
-- Basic support for:
-  - Keywords (`if`, `fn`, `return`, etc.)
-  - Constants (`True`, `False`)
-  - Built-in functions (`print`, `input`, `len`)
-  - Comments (single-line with `//`)
-  - Numbers, strings, operators, and punctuation
-  - Function names and variables
+> 🚧 **Warning:** NIKL is in a pre-alpha phase. Expect rapid changes and breaking updates.
 
 ---
 
-## Installation
+## ✨ Features
 
-Currently, the extension is **not published** on the VS Code Marketplace.
-
-To use it locally:
-
-1. Clone this repository:
-    ```bash
-    git clone https://github.com/Neko-Nik/NIKL-VSCode-Extension.git
-    cd NIKL-VSCode-Extension
-    ```
-2. Open this folder in VS Code.
-3. Press `F5` to launch a new Extension Development Host window with the extension loaded.
-4. Open or create `.nk` files to see syntax highlighting.
+* Syntax highlighting for `.nk` files
+* Clear support for:
+    * Keywords
+    * Constants (`True`, `False`, `None`)
+    * Built-in functions (`print`, `input`, `len`)
+    * Single-line comments (`//`)
+    * Numbers (integer and float)
+    * Strings (single and double-quoted)
+    * Operators (arithmetic, logical, comparison)
+    * Function names and variable recognition
 
 ---
 
-## Usage
+## 🧠 Syntax Highlighting Support
 
-Create `.nk` files containing NIKL code. Here’s a tiny example:
+### 🔑 Control & Declaration Keywords
 
-```nikl
-let x = 7
-print(x * 12 + 2)
-// Output: 86 
-````
+| Category          | Keywords                                                                                              |
+| ----------------- | ----------------------------------------------------------------------------------------------------- |
+| Control Flow      | `if`, `elif`, `else`, `while`, `for`, `loop`, `break`, `continue`, `return`                           |
+| Function & Import | `fn`, `import`, `as`, `del`                                                                           |
+| Declarations      | `let`, `const`                                                                                        |
+| Membership Check  | `in`                                                                                                  |
 
 ---
 
-## Contributing
+### 📌 Constants
 
-This project is in very early development. Contributions are welcome but expect ongoing refactors and breaking changes.
+| Type      | Values          |
+| --------- | --------------- |
+| Boolean   | `True`, `False` |
+| Null-like | `None`          |
 
-Feel free to open issues or pull requests for bug fixes, suggestions, or improvements.
+---
+
+### 🧰 Built-in Functions
+
+| Built-in Functions |
+| ------------------ |
+| `print`            |
+| `input`            |
+| `len`              |
+
+---
+
+### 🧱 Built-in Types
+
+| Types     |
+| --------- |
+| `Int`     |
+| `Float`   |
+| `Bool`    |
+| `String`  |
+| `Array`   |
+| `HashMap` |
+| `Tuple`   |
+
+---
+
+### ➕ Operators
+
+#### Assignment & Arithmetic
+
+| Type       | Operators          |
+| ---------- | ------------------ |
+| Assignment | `=`                |
+| Arithmetic | `+`, `-`, `*`, `/` |
+
+#### Logical
+
+| Type    | Operators          |
+| ------- | ------------------ |
+| Logical | `and`, `or`, `not` |
+
+#### Comparison
+
+| Type       | Operators            |
+| ---------- | -------------------- |
+| Equality   | `==`, `!=`           |
+| Comparison | `<`, `>`, `<=`, `>=` |
+
+---
+
+### 🔢 Numbers
+
+| Type    | Example         |
+| ------- | --------------- |
+| Integer | `42`            |
+| Float   | `3.14`, `0.001` |
+
+---
+
+### 🔤 Strings
+
+| Type             | Example           |
+| ---------------- | ----------------- |
+| Double-quoted    | `"Hello, World!"` |
+| Escape Sequences | `\n`, `\t`, `\\`  |
+
+---
+
+### 💬 Comments
+
+| Type        | Syntax Example         |
+| ----------- | ---------------------- |
+| Single-line | `// This is a comment` |
+
+---
+
+## 🚀 Getting Started
+
+1. **Install the Extension** via the VS Code Marketplace.
+2. **Create a `.nk` file** and begin writing NIKL code.
+
+```nk
+fn greet(name) {
+    print("Hello, " + name)
+}
+
+greet("World")
+```
+
+Syntax highlighting will be applied automatically.
+
+---
+
+## 📦 Resources
+
+* 🔽 [Download NIKL Interpreter](https://github.com/Neko-Nik/NIKL-Core/releases)
+* 📚 [NIKL Language Documentation](https://nikl.nekonik.com)
+* 💬 [Join the Discord Community](https://discord.gg/PYqHVUGdwv)
+* ⭐ [Star the GitHub Repository](https://github.com/Neko-Nik/NIKL-Core)
+
+---
+
+## 🛠️ Contributing
+
+We welcome contributions! You can help by:
+
+* Submitting bug reports and suggestions
+* Opening pull requests
+* Improving documentation or language definitions
+
+> Note: Since the language is evolving, expect frequent changes.
+
+---
+
+## 💬 Feedback & Support
+
+For help or to join the conversation, visit our [Discord](https://discord.gg/PYqHVUGdwv) or open an issue on [GitHub](https://github.com/users/Neko-Nik/projects/3).
+
+---
+
+Thanks for using **NIKL** 💜
